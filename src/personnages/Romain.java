@@ -16,5 +16,24 @@ public class Romain {
 	private String prendreParole() {
 	return "Le romain " + nom + " : ";
 	}
-
+	public void recevoirCoup(int forceCoup) {
+		force = force - forceCoup;
+		if (force > 0) {
+			parler("Aie");
+		} else {
+			parler("J'abandonne !");
+		}
+	}
+	@Override
+	public String toString() {
+		return  nom;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
